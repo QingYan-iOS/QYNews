@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="QYADViewController">
+            <connections>
+                <outlet property="jumpImageView" destination="shq-LE-PhV" id="eHD-Ig-gDA"/>
+                <outlet property="jumpView" destination="VfJ-8p-YVu" id="TrV-fX-1Zi"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="launchScreen_bg" translatesAutoresizingMaskIntoConstraints="NO" id="skk-ut-BAL">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4VM-BF-MaM">
+                    <rect key="frame" x="0.0" y="537" width="375" height="130"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="launchScreen_bottom_icon_wc" translatesAutoresizingMaskIntoConstraints="NO" id="uS3-W1-v7j">
+                            <rect key="frame" x="37" y="20" width="300" height="90"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="90" id="23C-42-wY4"/>
+                                <constraint firstAttribute="width" constant="300" id="iHw-DF-7OB"/>
+                            </constraints>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="130" id="1o8-Lj-HAc"/>
+                        <constraint firstAttribute="height" constant="130" id="3jI-ce-RFB"/>
+                        <constraint firstItem="uS3-W1-v7j" firstAttribute="centerY" secondItem="4VM-BF-MaM" secondAttribute="centerY" id="UI8-pQ-yqQ"/>
+                        <constraint firstItem="uS3-W1-v7j" firstAttribute="centerX" secondItem="4VM-BF-MaM" secondAttribute="centerX" id="n4L-Ce-WXH"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="86P-5y-iqA" userLabel="ADView">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VfJ-8p-YVu" userLabel="JumpView" customClass="DACircularProgressView">
+                            <rect key="frame" x="305" y="20" width="50" height="50"/>
+                            <subviews>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="achi_cycle" translatesAutoresizingMaskIntoConstraints="NO" id="EE8-BY-pYV">
+                                    <rect key="frame" x="10" y="10" width="30" height="30"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="30" id="gAl-X8-5rr"/>
+                                        <constraint firstAttribute="height" constant="30" id="k5w-cG-vKm"/>
+                                    </constraints>
+                                </imageView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="跳过" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iYw-iv-ydF">
+                                    <rect key="frame" x="12" y="17" width="26" height="16"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstItem="EE8-BY-pYV" firstAttribute="centerY" secondItem="VfJ-8p-YVu" secondAttribute="centerY" id="BWA-uC-Hme"/>
+                                <constraint firstItem="iYw-iv-ydF" firstAttribute="centerX" secondItem="VfJ-8p-YVu" secondAttribute="centerX" id="HFn-W2-BLv"/>
+                                <constraint firstAttribute="height" constant="50" id="ZkE-op-VHd"/>
+                                <constraint firstAttribute="width" constant="50" id="fWE-aK-d8Y"/>
+                                <constraint firstItem="iYw-iv-ydF" firstAttribute="centerY" secondItem="VfJ-8p-YVu" secondAttribute="centerY" id="ycE-Hy-kZZ"/>
+                                <constraint firstItem="EE8-BY-pYV" firstAttribute="centerX" secondItem="VfJ-8p-YVu" secondAttribute="centerX" id="yvw-Oy-dcB"/>
+                            </constraints>
+                        </view>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="shq-LE-PhV" userLabel="ADImageView">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="537"/>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="VfJ-8p-YVu" firstAttribute="top" secondItem="86P-5y-iqA" secondAttribute="top" constant="20" id="S6E-3e-APu"/>
+                        <constraint firstAttribute="trailing" secondItem="VfJ-8p-YVu" secondAttribute="trailing" constant="20" id="Xud-s8-c9Y"/>
+                        <constraint firstItem="shq-LE-PhV" firstAttribute="leading" secondItem="86P-5y-iqA" secondAttribute="leading" id="dFO-Kq-N4A"/>
+                        <constraint firstAttribute="trailing" secondItem="shq-LE-PhV" secondAttribute="trailing" id="fZ9-sA-L2S"/>
+                        <constraint firstItem="shq-LE-PhV" firstAttribute="top" secondItem="86P-5y-iqA" secondAttribute="top" id="kXC-HR-Px7"/>
+                        <constraint firstAttribute="bottom" secondItem="shq-LE-PhV" secondAttribute="bottom" constant="130" id="lrg-34-qVf"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="skk-ut-BAL" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="2F0-Xu-6G5"/>
+                <constraint firstAttribute="bottom" secondItem="86P-5y-iqA" secondAttribute="bottom" id="E81-lE-3kI"/>
+                <constraint firstAttribute="trailing" secondItem="skk-ut-BAL" secondAttribute="trailing" id="Gz5-mC-6vn"/>
+                <constraint firstItem="skk-ut-BAL" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="R7x-mg-oDu"/>
+                <constraint firstItem="4VM-BF-MaM" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="UR3-zQ-i2K"/>
+                <constraint firstItem="86P-5y-iqA" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="VxD-gx-zF5"/>
+                <constraint firstAttribute="trailing" secondItem="86P-5y-iqA" secondAttribute="trailing" id="YW3-lf-7Wp"/>
+                <constraint firstItem="86P-5y-iqA" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="f13-xs-yoL"/>
+                <constraint firstAttribute="trailing" secondItem="4VM-BF-MaM" secondAttribute="trailing" id="iuh-4S-0gx"/>
+                <constraint firstAttribute="bottom" secondItem="skk-ut-BAL" secondAttribute="bottom" id="ldG-qV-vWJ"/>
+                <constraint firstAttribute="bottom" secondItem="4VM-BF-MaM" secondAttribute="bottom" id="pWJ-5a-JYt"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="achi_cycle" width="160" height="160"/>
+        <image name="launchScreen_bg" width="2" height="2"/>
+        <image name="launchScreen_bottom_icon_wc" width="492" height="130"/>
+    </resources>
+</document>

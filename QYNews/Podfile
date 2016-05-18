@@ -4,6 +4,7 @@
 # use_frameworks!
 pod 'AFNetworking', '~> 3.1.0'
 pod 'SDWebImage', '~> 3.7.5'
+pod 'DACircularProgress', '~> 2.3.1'
 target 'QYNews' do
 
 end

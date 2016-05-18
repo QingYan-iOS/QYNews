@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-
+#import "QYADViewController.h"
 @interface AppDelegate ()
 
 @end
@@ -16,7 +16,17 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    
+    
+    //创建窗口
+    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    
+    QYADViewController *adVC = [[QYADViewController alloc]init];
+    
+    
+    self.window.rootViewController = adVC;
+    [self.window makeKeyAndVisible];
+    
     return YES;
 }
 

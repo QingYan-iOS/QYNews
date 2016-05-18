@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E4077EA21CEC9D77007C561E /* QYADViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E4077EA01CEC9D77007C561E /* QYADViewController.m */; };
+		E4077EA31CEC9D77007C561E /* QYADViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E4077EA11CEC9D77007C561E /* QYADViewController.xib */; };
 		E4AB57531CEB2FA000A74B90 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E4AB57511CEB2FA000A74B90 /* Main.storyboard */; };
 		E4AB57551CEB2FA000A74B90 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E4AB57541CEB2FA000A74B90 /* Assets.xcassets */; };
 		E4AB57581CEB2FA000A74B90 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E4AB57561CEB2FA000A74B90 /* LaunchScreen.storyboard */; };
@@ -19,6 +21,9 @@
 		26006CC4A0C425F37FAD324B /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		5901501AF36D541132FD05D6 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		D60619C4952626958DC7BD78 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		E4077E9F1CEC9D77007C561E /* QYADViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QYADViewController.h; sourceTree = "<group>"; };
+		E4077EA01CEC9D77007C561E /* QYADViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QYADViewController.m; sourceTree = "<group>"; };
+		E4077EA11CEC9D77007C561E /* QYADViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QYADViewController.xib; sourceTree = "<group>"; };
 		E4AB57451CEB2FA000A74B90 /* QYNews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QYNews.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4AB57521CEB2FA000A74B90 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E4AB57541CEB2FA000A74B90 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -58,6 +63,40 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		E4077E9B1CEC9C22007C561E /* 0-Ads */ = {
+			isa = PBXGroup;
+			children = (
+				E4077E9C1CEC9C22007C561E /* Controller */,
+				E4077E9D1CEC9C22007C561E /* Model */,
+				E4077E9E1CEC9C22007C561E /* View */,
+			);
+			path = "0-Ads";
+			sourceTree = "<group>";
+		};
+		E4077E9C1CEC9C22007C561E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E4077E9F1CEC9D77007C561E /* QYADViewController.h */,
+				E4077EA01CEC9D77007C561E /* QYADViewController.m */,
+				E4077EA11CEC9D77007C561E /* QYADViewController.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		E4077E9D1CEC9C22007C561E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E4077E9E1CEC9C22007C561E /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		E4AB573C1CEB2FA000A74B90 = {
 			isa = PBXGroup;
 			children = (
@@ -88,6 +127,7 @@
 		E4AB575F1CEB33D500A74B90 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				E4077E9B1CEC9C22007C561E /* 0-Ads */,
 				E4AB57601CEB33D500A74B90 /* 1-News */,
 				E4AB57641CEB33D500A74B90 /* 2-Reader */,
 				E4AB57681CEB33D500A74B90 /* 3-Media */,
@@ -367,6 +407,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E4AB57581CEB2FA000A74B90 /* LaunchScreen.storyboard in Resources */,
+				E4077EA31CEC9D77007C561E /* QYADViewController.xib in Resources */,
 				E4AB57551CEB2FA000A74B90 /* Assets.xcassets in Resources */,
 				E4AB57531CEB2FA000A74B90 /* Main.storyboard in Resources */,
 			);
@@ -427,6 +468,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E4077EA21CEC9D77007C561E /* QYADViewController.m in Sources */,
 				E4AB577D1CEB33D500A74B90 /* AppDelegate.m in Sources */,
 				E4AB577F1CEB33D500A74B90 /* main.m in Sources */,
 			);
