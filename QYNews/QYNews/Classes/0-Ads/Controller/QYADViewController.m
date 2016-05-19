@@ -42,8 +42,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-    
+//    self.adImageView.alpha = 0.6;
+   
     [self setupJumpView];
     
     [self addGestureForJumpView];
