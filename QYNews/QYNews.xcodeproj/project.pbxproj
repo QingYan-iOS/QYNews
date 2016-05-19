@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		E4077EA21CEC9D77007C561E /* QYADViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E4077EA01CEC9D77007C561E /* QYADViewController.m */; };
 		E4077EA31CEC9D77007C561E /* QYADViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E4077EA11CEC9D77007C561E /* QYADViewController.xib */; };
+		E4077ECF1CEDA1EF007C561E /* ADSModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E4077ECE1CEDA1EF007C561E /* ADSModel.m */; };
 		E4AB57531CEB2FA000A74B90 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E4AB57511CEB2FA000A74B90 /* Main.storyboard */; };
 		E4AB57551CEB2FA000A74B90 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E4AB57541CEB2FA000A74B90 /* Assets.xcassets */; };
 		E4AB57581CEB2FA000A74B90 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E4AB57561CEB2FA000A74B90 /* LaunchScreen.storyboard */; };
@@ -24,6 +25,8 @@
 		E4077E9F1CEC9D77007C561E /* QYADViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QYADViewController.h; sourceTree = "<group>"; };
 		E4077EA01CEC9D77007C561E /* QYADViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QYADViewController.m; sourceTree = "<group>"; };
 		E4077EA11CEC9D77007C561E /* QYADViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QYADViewController.xib; sourceTree = "<group>"; };
+		E4077ECD1CEDA1EF007C561E /* ADSModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADSModel.h; sourceTree = "<group>"; };
+		E4077ECE1CEDA1EF007C561E /* ADSModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADSModel.m; sourceTree = "<group>"; };
 		E4AB57451CEB2FA000A74B90 /* QYNews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QYNews.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4AB57521CEB2FA000A74B90 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E4AB57541CEB2FA000A74B90 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -86,6 +89,8 @@
 		E4077E9D1CEC9C22007C561E /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				E4077ECD1CEDA1EF007C561E /* ADSModel.h */,
+				E4077ECE1CEDA1EF007C561E /* ADSModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -470,6 +475,7 @@
 			files = (
 				E4077EA21CEC9D77007C561E /* QYADViewController.m in Sources */,
 				E4AB577D1CEB33D500A74B90 /* AppDelegate.m in Sources */,
+				E4077ECF1CEDA1EF007C561E /* ADSModel.m in Sources */,
 				E4AB577F1CEB33D500A74B90 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
